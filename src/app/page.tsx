@@ -1,31 +1,18 @@
 "use client";
 
+import { Inter } from 'next/font/google'
 import Image from "next/image";
 import Cabeçalho from "./Componentes/Cabeçalho/Cabeçalho";
-import Cards from "./Componentes/Cabeçalho/Cards";
+import Serviços from "./Componentes/Serviços";
+import ServiçosIA from './Componentes/ServiçosIA';
+import ServiçosTP from './Componentes/ServiçosTP';
+import Processo from './Componentes/Processo';
 
-const infos = [
-  {
-    imagem: "/imagens/walle.jpg",
-    titulo: "Automação Inteligente",
-    texto: "Automatize tarefas repetitivas e processos complexos com nossos agentes de IA avançados."
-  },
-  {
-    imagem: "/imagens/graficos.jpg",
-    titulo: "Otimização de Campanhas",
-    texto: "Maximize seu ROI com campanhas de marketing otimizadas por inteligência artificial."
-  },
-  {
-    imagem: "/imagens/reuniao.jpg",
-    titulo: "Atendimento 24/7",
-    texto: "Suporte contínuo com nossa assistente virtual Luiza, sempre disponível para ajudar."
-  }
-
-]
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className="">
+    <div className={`${inter.className}`}>
       <div className="relative h-screen bg-[url('/imagens/background.png')] bg-cover bg-center px-7 py-5">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/90 to-gray-900/75" />
         <div className="absolute inset-0 overflow-hidden">
@@ -36,9 +23,9 @@ export default function Home() {
           <Cabeçalho />
         </header>
         <div className="relative h-screen z-10 flex flex-col justify-center items-center md:mt-[-50px] lg:block lg:mt-[50px]">
-        <span className="inline-block px-4 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full mb-4">
-              🏆 Inovação em Inteligência Artificial
-            </span>
+          <span className="inline-block px-4 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full mb-4">
+            🏆 Inovação em Inteligência Artificial
+          </span>
           <div className="flex">
             <div className="max-w-2xl flex flex-col justify-center items-center text-center lg:text-left lg:block">
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">Transforme seu Negócio com os nossos <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Agentes de IA</span></h1>
@@ -62,21 +49,13 @@ export default function Home() {
         </div>
       </div>
       {/* Sessão Serviços */}
-      <div className="bg-white text-black py-20 flex justify-center flex-col items-center">
-        <span className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 font-medium text-sm mb-4">Recursos</span>
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">Tecnologia de Ponta para seu Negócio</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto text-center mb-4">Nossa plataforma combina tecnologia avançada com soluções práticas para impulsionar seu negócio no mundo digital.</p>
-        <div className="flex flex-wrap justify-center gap-4 md:px-8 md:gap-10 md:flex-nowrap">
-          {infos.map((uriel, index) => (
-            <Cards
-              key={index}
-              imagem={uriel.imagem}
-              titulo={uriel.titulo}
-              texto={uriel.texto}
-            />
-          ))}
-        </div>
-      </div>
+      <Serviços />
+      {/* Sub Sessão serviços de IA */}
+      <ServiçosIA />
+      {/* Sub Sessão Serviços Trafego Pago */}
+      <ServiçosTP />
+      {/* Processo */}
+      <Processo />
     </div>
   );
 }
