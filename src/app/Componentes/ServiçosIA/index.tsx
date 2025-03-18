@@ -43,8 +43,7 @@ function ServiçosIA() {
     ];
 
     return (
-        <div className="px-5 bg-white text-black py-20 flex justify-center flex-col items-center md:px-12">
-            <span className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-600 font-medium text-sm mb-4">Recursos</span>
+        <div id='ai-agents' className="px-5 bg-white text-black py-20 flex justify-center flex-col items-center md:px-12">
             <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">Agentes de Inteligência Artificial</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-center mb-4 text-lg">Revolucione a interação com seus clientes e otimize processos internos com nossos agentes de IA de última geração.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
