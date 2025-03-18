@@ -170,7 +170,7 @@ function Processo() {
                     ))}
                 </div>
 
-                <div className="px-5 bg-gray-100 rounded-xl p-8 md:p-12 text-center">
+                <div className="px-5 bg-gray-100 rounded-xl p-8 md:p-12 text-center mb-12">
                     <h3 className="text-2xl font-bold mb-4">Pronto para começar sua transformação digital?</h3>
                     <p className="text-gray-600 max-w-2xl mx-auto">
                         Nosso time de especialistas está pronto para analisar seu negócio e desenvolver uma
