@@ -14,7 +14,8 @@ export default function Home() {
   return (
     <div className={`${inter.className}`}>
       <Cabeçalho />
-      <div className="relative h-screen bg-[url('/imagens/background.png')] bg-cover bg-center px-7 py-5">
+      <div className="relative min-h-screen bg-[url('/imagens/background.png')] bg-cover bg-center px-7 py-5">
+
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/90 to-gray-900/75" />
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
@@ -23,7 +24,7 @@ export default function Home() {
 
 
         <div className="relative h-screen z-10 flex flex-col justify-center items-center md:mt-[-50px] lg:block lg:mt-[50px]">
-          <span className="inline-block px-4 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full mb-4">
+          <span className="inline-block px-4 py-1 text-sm font-semibold text-white bg-purple-600 rounded-full mb-4 mt-3">
             🏆 Inovação em Inteligência Artificial
           </span>
           <div className="flex">

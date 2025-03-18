@@ -58,7 +58,7 @@ function ServiçosIA() {
                 ))}
             </div>
             <div className='mt-12 bg-gradient-to-r from-blue-100 to-blue-50 rounded-xl p-8 md:p-12'>
-                <div className='flex flex-col md:flex-row md:items-center'>
+                <div className='flex flex-col md:items-center'>
                     <div className='md:w-2/3 mb-6 md:mb-0 md:pr-8'>
                         <h3 className='text-2xl font-bold mb-4 text-gray-900'>
                             Como os Agentes de IA podem transformar seu negócio
