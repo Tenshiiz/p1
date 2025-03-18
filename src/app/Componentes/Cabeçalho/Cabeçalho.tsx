@@ -20,12 +20,11 @@ function Cabeçalho() {
 
   return (
     <header className='bg-[#0c142c] fixed w-full z-50 py-3'>
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className=" h-13 rounded flex items-center justify-center text-white font-bold">
             <h1><Image src={"/imagens/LogoTheNext.png"} width={90} height={100} alt='Logo da TheNext' /></h1>
-            <p className='hidden text-2xl ml-[-15px] md:block'>TheNext</p>
           </div>
 
           {/* Navegação Desktop */}
